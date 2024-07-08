@@ -37,8 +37,6 @@
     </div>
 </header>
 
-
-
     <main>
         <section id="nosotros" class="container pt-4">
             <h2 class="section-title text-center mb-4">Más Sobre Nosotros</h2>
@@ -64,246 +62,39 @@
         
         <section id="anuncios" class="container pt-4">
             <h2 class="section-title text-center mb-4">Casas y Departamentos en Venta</h2>
-            <div class="row g-3 d-flex align-items-stretch">
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="height:100%">
-                        <img src="./images/anuncio1.jpg" class="card-img-top" alt="Casa de lujo en el lago">
-                        <div class="card-body" >
-                            <h3 class="card-title">
-                                Casa de lujo en el lago
-                            </h3>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore consectetur odio impedit quod necessitatibus. Neque at, ipsam cupiditate enim adipisci itaque libero voluptates praesentium ipsa aperiam recusandae, tenetur accusantium ut?</p>
-                            <h4 class="card-price">
-                                U$350.000
-                            </h4>
-
-                            <div class="d-flex my-4" >
-                                <div class="me-3 text-center">
-                                    <img src="./images/icono_wc.svg" alt="logo" style="width:30px; height: 30px;">
-                                    <span>3</span>
-                                </div>
-
-                                <div class="me-3 text-center">
-                                    <img src="./images/icono_estacionamiento.svg" alt="logo" style="width:30px; height: 30px;">
-                                    <span>3</span>
-                                </div>
-
-                                <div class="me-3 text-center">
-                                    <img src="./images/icono_dormitorio.svg" alt="logo" style="width:30px; height: 30px;">
-                                    <span>4</span>
-                                </div>
-                            </div>
-                            
-                            
-                            </div>    
-
-                          <div class="container-fluid mt-3">
-                              <a href="#" class="btn btn-warning btn-lg m-0 mb-3" style="width: 100%;">Ver Propiedad</a>
-                          </div>
-                        
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="height:100%">
-                        <img src="./images/anuncio2.jpg" class="card-img-top" alt="Casa moderna en la ciudad">
-                        <div class="card-body">
-                            <h3 class="card-title">
-                                Casa terminados de lujo
-                            </h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, aliquid ducimus, ipsa quasi, quo voluptatibus voluptates iusto dolorum fugiat enim iste error magni mollitia vero perferendis vitae! Fugiat, nulla libero?</p>
-                            <h4 class="card-price">
-                                U$275.000
-                            </h4>
-                            <div class="d-flex my-4 ">
-                                <div class="me-3 text-center">
-                                    <img src="./images/icono_wc.svg" alt="logo" style="width:30px; height: 30px;">
-                                    <span>3</span>
-                                    
-                                </div>
-
-                                <div class="me-3 text-center">
-                                    <img src="./images/icono_estacionamiento.svg" alt="logo" style="width:30px; height: 30px;">
-                                    
-                                    <span>3</span>
-                                </div>
-
-                                <div class="me-3 text-center">
-                                    <img src="./images/icono_dormitorio.svg" alt="logo" style="width:30px; height: 30px;">
-
-                                    <span>4</span>
-                                </div>
-                            </div>
-
-                                     
+            <div class="row g-3 d-flex align-items-stretch" id="anuncios-container">
+                <!-- Plantilla para anuncios -->
+                <template id="anuncio-template">
+                    <div class="col-md-4 mb-4">
+                        <div class="card" style="height:100%">
+                            <img src="" class="card-img-top" alt="Imagen de propiedad">
+                            <div class="card-body">
+                                <h3 class="card-title"></h3>
+                                <p class="card-text"></p>
+                                <h4 class="card-price"></h4>
+                                <div class="d-flex my-4">
+                                    <div class="me-3 text-center">
+                                        <img src="./images/icono_wc.svg" alt="logo" style="width:30px; height: 30px;">
+                                        <span class="wc"></span>
                                     </div>
-                                <div class="container-fluid mt-3">
-                                    <a href="#" class="btn btn-warning btn-lg m-0 mb-3" style="width: 100%;">Ver Propiedad</a>
-                                </div>
-                        </div>
-                </div>
-
-                
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="height:100%">
-                        <img src="./images/anuncio3.jpg" class="card-img-top" alt="Casa moderna en la ciudad">
-                        <div class="card-body">
-                            <h3 class="card-title">
-                                Casa terminados de lujo
-                            </h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, aliquid ducimus, ipsa quasi, quo voluptatibus voluptates iusto dolorum fugiat enim iste error magni mollitia vero perferendis vitae! Fugiat, nulla libero?</p>
-                            <h4 class="card-price">
-                                U$275.000
-                            </h4>
-                            <div class="d-flex my-4 ">
-                                <div class="me-3 text-center">
-                                    <img src="./images/icono_wc.svg" alt="logo" style="width:30px; height: 30px;">
-                                    <span>3</span>
-                                    
-                                </div>
-
-                                <div class="me-3 text-center">
-                                    <img src="./images/icono_estacionamiento.svg" alt="logo" style="width:30px; height: 30px;">
-                                    
-                                    <span>3</span>
-                                </div>
-
-                                <div class="me-3 text-center">
-                                    <img src="./images/icono_dormitorio.svg" alt="logo" style="width:30px; height: 30px;">
-
-                                    <span>4</span>
-                                </div>
-                            </div>
+                                    <div class="me-3 text-center">
+                                        <img src="./images/icono_estacionamiento.svg" alt="logo" style="width:30px; height: 30px;">
+                                        <span class="estacionamiento"></span>
                                     </div>
-                                <div class="container-fluid mt-3">
-                                    <a href="#" class="btn btn-warning btn-lg m-0 mb-3" style="width: 100%;">Ver Propiedad</a>
-                                </div>
-                        </div>
-                </div>
-                
-                
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="height:100%">
-                        <img src="./images/anuncio4.jpg" class="card-img-top" alt="Departamento céntrico">
-                        <div class="card-body">
-                            <h3 class="card-title">
-                                Casa con pileta
-                            </h3>
-                            <p class="card-text">Lorem, ipsum  amet consectetur adipisicing elit. Assumenda, suscipit mollitia aperiam reprehenderit nostrum fugit necessitatibus obcaecati dolorem ipsam ad sapiente non. Ratione commodi quas soluta beatae voluptate repellat quam.</p>
-                            <h4 class="card-price">
-                                U$250.000
-                            </h4>
-                            
-                            <div class="d-flex my-4">
-                                <div class="me-3 text-center">
-                                    <img src="./images/icono_wc.svg" alt="logo" style="width:30px; height: 30px;">
-                                    <span>3</span>
-                                    
-                                </div>
-
-                                <div class="me-3 text-center">
-                                    <img src="./images/icono_estacionamiento.svg" alt="logo" style="width:30px; height: 30px;">
-                                    
-                                    <span>3</span>
-                                </div>
-
-                                <div class="me-3 text-center">
-                                    <img src="./images/icono_dormitorio.svg" alt="logo" style="width:30px; height: 30px;">
-
-                                    <span>4</span>
+                                    <div class="me-3 text-center">
+                                        <img src="./images/icono_dormitorio.svg" alt="logo" style="width:30px; height: 30px;">
+                                        <span class="dormitorios"></span>
+                                    </div>
                                 </div>
                             </div>
-
-                            </div>
-                                <div class="container-fluid mt-3">
-                                    <a href="#" class="btn btn-warning btn-lg m-0 mb-3" style="width: 100%;">Ver Propiedad</a>
-                            </div>
-                    </div>          
-                </div>
-
-                
-                <div class="col-md-4 mb-4">
-                  <div class="card" style="height:100%">
-                      <img src="./images/anuncio5.jpg" class="card-img-top" alt="Casa moderna en la ciudad">
-                      <div class="card-body">
-                          <h3 class="card-title">
-                              Casa terminados de lujo
-                          </h3>
-                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, aliquid ducimus, ipsa quasi, quo voluptatibus voluptates iusto dolorum fugiat enim iste error magni mollitia vero perferendis vitae! Fugiat, nulla libero?</p>
-                          <h4 class="card-price">
-                              U$275.000
-                          </h4>
-                          <div class="d-flex my-4 ">
-                              <div class="me-3 text-center">
-                                  <img src="./images/icono_wc.svg" alt="logo" style="width:30px; height: 30px;">
-                                  <span>3</span>
-                                  
-                              </div>
-
-                              <div class="me-3 text-center">
-                                  <img src="./images/icono_estacionamiento.svg" alt="logo" style="width:30px; height: 30px;">
-                                  
-                                  <span>3</span>
-                              </div>
-
-                              <div class="me-3 text-center">
-                                  <img src="./images/icono_dormitorio.svg" alt="logo" style="width:30px; height: 30px;">
-
-                                  <span>4</span>
-                              </div>
-                          </div>
-
-                                   
-                                  </div>
-                              <div class="container-fluid mt-3">
-                                  <a href="#" class="btn btn-warning btn-lg m-0 mb-3" style="width: 100%;">Ver Propiedad</a>
-                              </div>
-                      </div>
-              </div>
-
-              
-              <div class="col-md-4 mb-4">
-                <div class="card" style="height:100%">
-                    <img src="./images/anuncio6.jpg" class="card-img-top" alt="Casa moderna en la ciudad">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            Casa terminados de lujo
-                        </h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, aliquid ducimus, ipsa quasi, quo voluptatibus voluptates iusto dolorum fugiat enim iste error magni mollitia vero perferendis vitae! Fugiat, nulla libero?</p>
-                        <h4 class="card-price">
-                            U$275.000
-                        </h4>
-                        <div class="d-flex my-4 ">
-                            <div class="me-3 text-center">
-                                <img src="./images/icono_wc.svg" alt="logo" style="width:30px; height: 30px;">
-                                <span>3</span>
-                                
-                            </div>
-
-                            <div class="me-3 text-center">
-                                <img src="./images/icono_estacionamiento.svg" alt="logo" style="width:30px; height: 30px;">
-                                
-                                <span>3</span>
-                            </div>
-
-                            <div class="me-3 text-center">
-                                <img src="./images/icono_dormitorio.svg" alt="logo" style="width:30px; height: 30px;">
-
-                                <span>4</span>
-                            </div>
-                        </div>
-
-                                 
-                                </div>
                             <div class="container-fluid mt-3">
                                 <a href="#" class="btn btn-warning btn-lg m-0 mb-3" style="width: 100%;">Ver Propiedad</a>
                             </div>
+                        </div>
                     </div>
-            </div>
-            
-              
+                </template>
             </div>
             <div class="container d-flex justify-content-end">
-                
                 <a href="#" class="btn btn-success">Ver Todas</a>
             </div>
         </section>
@@ -359,89 +150,36 @@
         <section id="blog" class="container">
             <div class="row mx-1">
                 <div class="col-12 col-md-6">
-
                     <h2 class="section-title text-center mb-3">Nuestros Blogs</h2>
-                    <div class="card border-0" style="max-width: 540px;">
-                        <div class="row g-0">
-                          <div class="col-md-6">
-                            <img src="./images/blog1.jpg" class="img-fluid mt-2" alt="...">
-                          </div>
-
-                          <div class="col-md-6">
-                            <div class="card-body">
-                              <h5 class="card-title">Terraza en el Techo de tu casa</h5>
-                              
-                              <div class="barra"></div>
-                              <p ><small class="text-body-secondary">Escrito el: <strong>20/10/2019</strong> por: <strong>Admin</strong> </small></p>
-                              <p>Consejos para construir tu terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero.</p>
+                    <div id="blogs-container">
+                        <!-- Plantilla para blogs -->
+                        <template id="blog-template">
+                            <div class="card border-0 mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <img src="" class="img-fluid mt-2" alt="Imagen de blog">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title"></h5>
+                                            <div class="barra"></div>
+                                            <p><small class="text-body-secondary">Escrito el: <strong></strong> por: <strong></strong> </small></p>
+                                            <p class="card-text"></p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card border-0 mb-3" style="max-width: 540px;" >
-                        <div class="row g-0">
-                          <div class="col-md-6">
-                            <img src="./images/blog2.jpg" class="img-fluid mt-2"  alt="...">
-                          </div>
-
-                          <div class="col-md-6">
-                            <div class="card-body">
-                              <h5 class="card-title">Guía para la decoración de tu hogar</h5>
-                              <div class="barra"></div>
-                              <p class="card-text"><small class="text-body-secondary">Escrito el: <strong>20/10/2019</strong> por: <strong>Admin</strong></small></p>
-                              <p class="card-text">Maximiza el espacio en tu hogar con esta guia, aprende a combinar muebles y colores para darle vida a tu espacio.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card border-0 mb-3" style="max-width: 540px;" >
-                        <div class="row g-0">
-                          <div class="col-md-6">
-                            <img src="./images/blog3.jpg" class="img-fluid mt-2"  alt="...">
-                          </div>
-
-                          <div class="col-md-6">
-                            <div class="card-body">
-                              <h5 class="card-title">Guía para la decoración de tu hogar</h5>
-                              <div class="barra"></div>
-                              <p class="card-text"><small class="text-body-secondary">Escrito el: <strong>20/10/2019</strong> por: <strong>Admin</strong></small></p>
-                              <p class="card-text">Maximiza el espacio en tu hogar con esta guia, aprende a combinar muebles y colores para darle vida a tu espacio.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card border-0 mb-3" style="max-width: 540px;" >
-                        <div class="row g-0">
-                          <div class="col-md-6">
-                            <img src="./images/blog4.jpg" class="img-fluid mt-2"  alt="...">
-                          </div>
-
-                          <div class="col-md-6">
-                            <div class="card-body">
-                              <h5 class="card-title">Guía para la decoración de tu hogar</h5>
-                              <div class="barra"></div>
-                              <p class="card-text"><small class="text-body-secondary">Escrito el: <strong>20/10/2019</strong> por: <strong>Admin</strong></small></p>
-                              <p class="card-text">Maximiza el espacio en tu hogar con esta guia, aprende a combinar muebles y colores para darle vida a tu espacio.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
+                        </template>
+                    </div>
                 </div>
-
                 <div class="col-12 col-md-6 mb-5">
                     <h2 class="section-title text-center mb-4">Comentarios</h2>
                     <div class="comentarios-card-content">
                         <img src="./images/comilla.svg" alt="logo"/>
                         <p>El Personal se comportó de forma, muy buena atención y la casa que me ofrecieron cumple con todas mis expectativas. Pude comprar la casa de mis sueños para mi y mi familia.</p>
-                        
                         <strong>-Juan Perez</strong>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -473,38 +211,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFyP7+G+KDHDDpH8QWgmgaP+61iNf+mVhFmgBZQd0cK+h2xGU5PA6M" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhG81mK7+PvL06t6NR0jQWj/2e9k6Tff2w5f5Vmc0ohuw5y1n6V9KK3P8d2L" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+
     <div class="menu-overlay"></div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const sideMenu = document.querySelector('.side-menu');
-            const menuOverlay = document.querySelector('.menu-overlay');
 
-            function openMenu() {
-                sideMenu.classList.add('active');
-                menuOverlay.classList.add('active');
-                menuToggle.setAttribute('hidden', 'true');
-            }
-
-            function closeMenu() {
-                sideMenu.classList.remove('active');
-                menuOverlay.classList.remove('active');
-                menuToggle.removeAttribute('hidden');
-
-            }
-
-            menuToggle.addEventListener('click', openMenu);
-
-            menuOverlay.addEventListener('click', closeMenu);
-
-            window.addEventListener('resize', function () {
-                if (window.innerWidth >= 768) {
-                    closeMenu();
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
